@@ -8,8 +8,6 @@ export default function Home() {
       <Head>
         <title>Nextjs | Home</title>
         <meta name="keywords" content="nextjs"></meta>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600\&display=swap" rel="stylesheet" />
       </Head>
       <HomeWrapper>
         <h1 className="title">Homepage</h1>

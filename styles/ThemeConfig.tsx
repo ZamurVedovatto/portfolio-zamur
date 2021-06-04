@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle<{theme: IDefaultTheme}>`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     transition: all 0.50s linear;
 
     &.dark-mode {
