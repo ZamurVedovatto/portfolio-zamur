@@ -1,9 +1,8 @@
 import { AppProps } from 'next/app'
 import Layout from '../components/Layout'
-import useDarkMode from "use-dark-mode"
-import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme, GlobalStyles } from "./../styles/ThemeConfig"
-import '../styles/globals.css' //TODO remove it
+import useDarkMode from 'use-dark-mode'
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from './../styles/ThemeConfig'
 import { useEffect, useState } from 'react'
 
 function MyApp({ Component, pageProps }: AppProps) {

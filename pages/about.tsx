@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { AboutWrapper } from './../styles/About'
 
 const About = () => {
   return (
@@ -7,9 +8,9 @@ const About = () => {
         <title>Nextjs | About</title>
         <meta name="keywords" content="about"></meta>
       </Head>
-      <div>
+      <AboutWrapper>
         about
-      </div>
+      </AboutWrapper>
     </>
   );
 }

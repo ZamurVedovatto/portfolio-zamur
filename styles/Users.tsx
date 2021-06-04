@@ -1,0 +1,20 @@
+import styled from 'styled-components'
+
+export const UsersWrapper = styled.section`
+  .single {
+    padding: 2px 16px;
+    background: #fff;
+    display: block;
+    margin: 20px 10px;
+    border-left: 8px solid #fff;
+    transition: .25s ease-in-out;
+  }
+
+  .single:hover {
+    border-left: 8px solid #4979ff;
+  }
+
+  .single:hover p {
+    font-weight: bold;
+  }
+`
