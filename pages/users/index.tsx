@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
-
+import { server } from './../../config';
 import styles from './../../styles/Users.module.css'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  const response = await fetch(`${server}`)
   const data = await response.json()
   
   return {
