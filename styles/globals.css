@@ -44,3 +44,16 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+
+
+
+body.dark-mode {
+  color: #fff;
+  background: #363537;
+}
+
+body.light-mode {
+  color: #363537;
+  background: #fafafa;
+} 

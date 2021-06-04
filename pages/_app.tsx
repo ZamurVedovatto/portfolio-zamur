@@ -1,23 +1,28 @@
 import { AppProps } from 'next/app'
 import Layout from '../components/Layout'
+import useDarkMode from "use-dark-mode"
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./../styles/ThemeConfig"
 import '../styles/globals.css' //TODO remove it
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState("light") 
+  const [isMounted, setIsMounted] = useState(false)
+  const darkmode = useDarkMode(true)
+  const theme = darkmode.value ? darkTheme : lightTheme
 
-  const toggleTheme = () => {
-    theme == 'light' ? setTheme('dark') : setTheme('light')
-  }
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   return (
-    <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Layout>
-        <button onClick={toggleTheme}>Switch Theme</button>
-        <Component {...pageProps} />
+        <button onClick={darkmode.toggle}>Switch Mode</button>
+        <button onClick={darkmode.enable}>Dark Mode</button>
+        <button onClick={darkmode.disable}>Light Mode</button>
+        {isMounted && <Component {...pageProps} />}
       </Layout>
     </ThemeProvider>
   )
