@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { AboutWrapper } from './../styles/About'
+import { AboutWrapper } from 'styles/About'
 
 const About = () => {
   return (

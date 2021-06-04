@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { HomeWrapper } from '../styles/Home'
+import { HomeWrapper } from 'styles/Home'
 
 export default function Home() {
   return (
