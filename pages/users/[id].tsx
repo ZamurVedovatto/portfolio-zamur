@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import { GetStaticProps, GetStaticPaths } from 'next'
+const API_URL: string = 'https://jsonplaceholder.typicode.com/users'
 
-export const getStaticPaths = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const response = await fetch(API_URL);
   const data = await response.json()
   const paths = data.map(user => {
     return {
@@ -15,9 +18,9 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params.id
-  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+  const response = await fetch(`${API_URL}/${id}`)
   const data = await response.json()
 
   return {
@@ -27,7 +30,20 @@ export const getStaticProps = async (context) => {
   }
 }
 
-const UserPage = ({ user }) => {
+interface User {
+  name: string,
+  email: string,
+  website?: string,
+  address?: {
+    city?: string
+  },
+}
+
+type Props = {
+  user: User
+}
+
+const UserPage: React.FC<Props> = ({ user }) => {
   return (
     <>
       <Head>
