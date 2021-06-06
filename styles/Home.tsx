@@ -7,7 +7,8 @@ export const HomeWrapper = styled.section`
   padding: 2rem;
   height: 100vh;
   width: 100%;
-  background-color: #FDE131;
+  /* background-color: #FDE131; */
+  background-color: #fff5b67a;
   .avatar {
     min-width: 300px;
     min-height: 300px;
@@ -45,6 +46,7 @@ export const HomeWrapper = styled.section`
       text-transform: uppercase;
       margin: 0;
       line-height: 1;
+      text-align: center;
     }
     span {
       margin: 2rem 0;
@@ -55,8 +57,7 @@ export const HomeWrapper = styled.section`
     .social-media {
       width: 100%;
       display: flex;
-      justify-content: flex-start;
-
+      justify-content: center;
       img {
         cursor: pointer;
         padding: 0 1.25rem 0 .5rem !important;

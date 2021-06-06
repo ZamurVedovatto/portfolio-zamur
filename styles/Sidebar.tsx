@@ -3,10 +3,18 @@ import styled from 'styled-components'
 export const SidebarWrapper = styled.div`
   background-color: #FFF;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  min-width: 25vw;
+  min-width: 20vw;
+  padding: 10vh 0 1rem;
+  .logo-area {
+    cursor: pointer;
+    transition: .25s ease-in-out;
+    &:hover {
+      transform: scale(.9);
+    }
+  }
 
   ul {
     list-style-type: none;
@@ -14,8 +22,9 @@ export const SidebarWrapper = styled.div`
     li {
       /* line-height: 2rem; */
       font-weight: 300;
-      font-size: 1.25rem;
-      padding-bottom: 1rem;
+      font-size: 1rem;
+      padding-bottom: .5rem;
+      text-transform: uppercase;
       &.active {
         font-weight: 500;
         a {
@@ -45,7 +54,7 @@ export const SidebarWrapper = styled.div`
   }
 
   .footer-content {
-    position: fixed;
-    bottom: 2rem;
+    /* position: fixed;
+    bottom: 2rem; */
   }
 `

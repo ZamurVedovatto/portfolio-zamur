@@ -12,30 +12,25 @@ export interface SidebarProps {
 const Sidebar: React.SFC<SidebarProps> = () => {
   return (
     <SidebarWrapper>
+      <div className="logo-area">
+        <Link href="/">
+          <Image width={80} height={80} src="/logo.png" />
+        </Link>
+      </div>
       <ul>
         <li className="active">
-          <Link href="/">
-            <a>Home</a>
+          <Link href="/about">
+            <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/projects">
             <a>Portfolio</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>News</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
+          <Link href="/contact">
             <a>Contact</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Home</a>
           </Link>
         </li>
       </ul>

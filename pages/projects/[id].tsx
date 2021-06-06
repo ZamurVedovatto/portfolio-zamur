@@ -38,7 +38,7 @@ const UserPage: React.FC<Props> = ({ user }) => {
   return (
     <>
       <Head>
-        <title>Nextjs | {user.name}</title>
+        <title>Zamur | {user.name}</title>
         <meta name="keywords" content="users"></meta>
       </Head>
     <div>

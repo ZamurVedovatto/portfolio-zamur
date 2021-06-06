@@ -19,13 +19,13 @@ const Users = ({ users }) => {
   return (
     <>
       <Head>
-        <title>Nextjs | Users</title>
+        <title>Zamur | Users</title>
         <meta name="keywords" content="users"></meta>
       </Head>
     <UsersWrapper>
       <h1>All users</h1>
       {users?.map(user => (
-        <Link href={`/users/${user.id}`} key={user.id}>
+        <Link href={`/projects/${user.id}`} key={user.id}>
           <a className="single">
             <p>{user.name}</p>
           </a>
