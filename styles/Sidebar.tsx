@@ -2,12 +2,11 @@ import styled from 'styled-components'
 
 export const SidebarWrapper = styled.div`
   background-color: #FFF;
-  border-right: 1px solid lightgrey;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-width: 20vw;
+  min-width: 25vw;
 
   ul {
     list-style-type: none;
