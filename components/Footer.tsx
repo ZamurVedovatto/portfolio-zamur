@@ -1,8 +1,11 @@
+import FooterWrapper from './../styles/Footer'
+
 const Footer = () => {
   return (
-    <footer>
-      <span>Copyright 2021 Zamur</span>
-    </footer>
+    <FooterWrapper>
+      <span>&copy; 2021</span>
+      <span>Created by Zamur</span>
+    </FooterWrapper>
   )
 }
 

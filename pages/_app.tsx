@@ -18,9 +18,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Layout>
-        <button onClick={darkmode.toggle}>Switch Mode</button>
+        {/* <button onClick={darkmode.toggle}>Switch Mode</button>
         <button onClick={darkmode.enable}>Dark Mode</button>
-        <button onClick={darkmode.disable}>Light Mode</button>
+        <button onClick={darkmode.disable}>Light Mode</button> */}
         {isMounted && <Component {...pageProps} />}
       </Layout>
     </ThemeProvider>

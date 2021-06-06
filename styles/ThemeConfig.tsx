@@ -16,6 +16,15 @@ export const darkTheme = {
 }
 
 export const GlobalStyles = createGlobalStyle<{theme: IDefaultTheme}>`
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
@@ -33,38 +42,9 @@ export const GlobalStyles = createGlobalStyle<{theme: IDefaultTheme}>`
     } 
   }
 
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  .content {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-  nav {
-    margin: 10px auto 80px;
-    padding: 10px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border-bottom: 1px solid #ddd;
-    a {
-      margin-left: 12px;
-    }
-    .logo {
-      margin-right: auto;
-    }
-  }
-
-  footer {
-    display: block;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 60px;
-    color: #777;
-    border-top: 1px solid #eaeaea;
+  #__next {
+    width: 100%;
+    height: 100%;
   }
 
   .not-found {
@@ -72,6 +52,14 @@ export const GlobalStyles = createGlobalStyle<{theme: IDefaultTheme}>`
     a {
       color: #4979ff;
       text-decoration: underline;
+    }
+  }
+
+  .content {
+    display: flex;
+    .main-content {      
+      min-height: 100vh;
+      width: 100%;
     }
   }
 `
