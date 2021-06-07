@@ -8,7 +8,7 @@ export const HomeWrapper = styled.section`
   height: 100vh;
   width: 100%;
   /* background-color: #FDE131; */
-  background-color: #fff5b67a;
+  background-color: #F9F9FF;
   .avatar {
     min-width: 300px;
     min-height: 300px;
@@ -30,6 +30,10 @@ export const HomeWrapper = styled.section`
       -webkit-box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
       -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
       box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+      transition: 2s ease-in-out;
+      &:hover {
+        transform: scale(1.25);
+      }
     }
   }
 

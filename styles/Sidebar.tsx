@@ -8,6 +8,9 @@ export const SidebarWrapper = styled.div`
   align-items: center;
   min-width: 20vw;
   padding: 7.5vh 0;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
   .logo-area {
     cursor: pointer;
     transition: .25s ease-in-out;

@@ -9,7 +9,7 @@ export const AboutWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff5b67a;
+  background-color: #F9F9FF;
   .about-img {
     display: flex;
     justify-content: center;

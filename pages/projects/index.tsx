@@ -1,39 +1,70 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState } from 'react'
 import { GetStaticProps } from 'next'
-import { UsersWrapper } from '../../styles/Users'
+import { Octokit } from '@octokit/rest'
+import { ProjectsWrapper } from 'styles/Projects'
+import Modal from 'components/ModalComp'
 
-// https://bootcamp.uxdesign.cc/embed-your-github-project-on-your-react-website-ccefacc30f62
-// https://www.youtube.com/watch?v=g7udsGn51z0
 
-export const getStaticProps: GetStaticProps = async (repo) => {
-  const response = await fetch(`https://api.github.com/repos/ZamurVedovatto/${repo}`)
-  const data = await response.json()
+// https://www.youtube.com/watch?v=WgJbfMxUl8A
+
+
+export const getStaticProps: GetStaticProps = async () => {
+  const octokit = new Octokit({
+    auth: process.env.GITHUB_KEY
+  })
+  
+  const repos = await octokit.request('/users/ZamurVedovatto/repos')
+  const mineRepo = repos.data.filter((repo: { fork: any }) => !repo.fork)
+
+  // mineRepo.forEach(async repo => {
+  //   let langs = await octokit.request(`https://api.github.com/repos/dotnet/corefx/languages`)
+  //   console.log(langs)
+  // })
   
   return {
     props: {
-      users: data
+      repos: mineRepo
     }
   }
 }
 
-const Users = ({ users }) => {
+const Users = ({ repos }) => {
+  const [showModal, setShowModal] = useState(false)
+
   return (
     <>
       <Head>
-        <title>Zamur | Users</title>
-        <meta name="keywords" content="users"></meta>
+        <title>Zamur | Projects</title>
+        <meta name="keywords" content="projects"></meta>
       </Head>
-    <UsersWrapper>
-      <h1>All users</h1>
-      {users?.map(user => (
-        <Link href={`/projects/${user.id}`} key={user.id}>
-          <a className="single">
-            <p>{user.name}</p>
-          </a>
-        </Link>
-      ))}
-    </UsersWrapper>
+      <ProjectsWrapper>
+        <div className="cards-wrapper">
+          {repos?.map(repo => (
+            <a className="single">
+              <span className="title">{repo.name}</span>
+              <span className="subtitle">{repo.description}</span>
+              {/* <ul>
+                {
+                  repo.languages_url?.map(lang => {
+                    <li key={lang}>{lang}</li>
+                  })
+                }
+              </ul> */}
+              <div className="options">
+                <a onClick={() => setShowModal(true)} type="button">demo</a>
+                <a target="_blank" href={repo.html_url} rel="noopener noreferrer">github</a>
+              </div>
+            </a>
+          ))}
+        </div>
+
+      </ProjectsWrapper>
+
+      <Modal show={showModal} handleClose={() => setShowModal(false)}>
+        <div style={{ width: "100%", height: '80vh' }} dangerouslySetInnerHTML={{ __html: "<iframe width='100%' height='100%' src='https://zpayment-integration.herokuapp.com/' />"}} />
+      </Modal>
     </>
   );
 }
