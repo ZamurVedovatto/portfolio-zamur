@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
+import { server } from './../../config';
 import { UsersWrapper } from '../../styles/Users'
 
-// https://bootcamp.uxdesign.cc/embed-your-github-project-on-your-react-website-ccefacc30f62
-// https://www.youtube.com/watch?v=g7udsGn51z0
-
-export const getStaticProps: GetStaticProps = async (repo) => {
-  const response = await fetch(`https://api.github.com/repos/ZamurVedovatto/${repo}`)
+export const getStaticProps: GetStaticProps = async () => {
+  const response = await fetch(`${server}`)
   const data = await response.json()
   
   return {
@@ -27,7 +25,7 @@ const Users = ({ users }) => {
     <UsersWrapper>
       <h1>All users</h1>
       {users?.map(user => (
-        <Link href={`/projects/${user.id}`} key={user.id}>
+        <Link href={`/users/${user.id}`} key={user.id}>
           <a className="single">
             <p>{user.name}</p>
           </a>
