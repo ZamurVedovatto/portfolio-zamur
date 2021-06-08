@@ -27,10 +27,6 @@ export const ProjectsWrapper = styled.section`
       &:nth-child(n) {
         background-color: white;
       }
-      /* &:nth-child(2n) {
-        background-color: #1E87F0;
-        color: white;
-      }       */
       &:hover {
         transform: scale(1);
         .options {

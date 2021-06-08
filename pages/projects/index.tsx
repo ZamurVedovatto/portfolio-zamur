@@ -53,7 +53,7 @@ const Users = ({ repos }) => {
                 }
               </ul> */}
               <div className="options">
-                <a onClick={() => setShowModal(true)} type="button">demo</a>
+                {/* <a onClick={() => setShowModal(true)} type="button">demo</a> */}
                 <a target="_blank" href={repo.html_url} rel="noopener noreferrer">github</a>
               </div>
             </a>

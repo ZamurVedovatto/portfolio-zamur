@@ -56,8 +56,22 @@ export const SidebarWrapper = styled.div`
     }
   }
 
-  .footer-content {
-    /* position: fixed;
-    bottom: 2rem; */
+  .footer-content {}
+
+  @media only screen and (max-width: 320px) {}
+  @media only screen and (max-width: 420px) {}
+  @media only screen and (max-width: 600px) {}
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 1rem 0;
+    z-index: 1;
+    ul {
+      text-align: center;
+      li {}
+    }
+    .footer-content {
+      display: none;
+    }
   }
+  @media only screen and (max-width: 992px) {}
+  @media only screen and (max-width: 1260px) {}
 `

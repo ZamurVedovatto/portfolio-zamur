@@ -62,4 +62,19 @@ export const GlobalStyles = createGlobalStyle<{theme: IDefaultTheme}>`
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 320px) {}
+  @media only screen and (max-width: 420px) {}
+  @media only screen and (max-width: 600px) {}
+  @media only screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      .main-content {
+        height: auto;
+        min-height: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {}
+  @media only screen and (max-width: 1260px) {}
 `

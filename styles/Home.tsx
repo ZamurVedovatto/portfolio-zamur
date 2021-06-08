@@ -36,7 +36,6 @@ export const HomeWrapper = styled.section`
       }
     }
   }
-
   .info {
     padding: 0 2rem;
     max-width: 50%;
@@ -73,4 +72,42 @@ export const HomeWrapper = styled.section`
     }
   }
 
+  @media only screen and (max-width: 320px) {}
+  @media only screen and (max-width: 420px) {}
+  @media only screen and (max-width: 600px) {}
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    padding: 2rem;
+    flex-direction: column;
+    .avatar {
+      margin-bottom: 1rem;
+      min-width: 120px;
+      min-height: 120px;
+      .image {
+        &:hover {}
+      }
+    }
+    .info {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      padding: 0;
+      h2 {
+        font-size: 1.2rem;
+      }
+      span {
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem 0 2.5rem;
+      }
+      .social-media {
+        padding-bottom: 2rem;
+        img {
+          &:hover {}
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {}
+  @media only screen and (max-width: 1260px) {}
 `

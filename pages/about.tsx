@@ -34,7 +34,7 @@ const About = () => {
             <span className="subtitle">
               Back end experience in Node.js, Django, Mongodb and GraphQL.
             </span>
-            <button onClick={() => setShowModal(true)} type="button">skills technologies tools</button>
+            {/* <button onClick={() => setShowModal(true)} type="button">skills technologies tools</button> */}
           </div>
           <div className="about-info-right">
             <ul>

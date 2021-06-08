@@ -81,7 +81,6 @@ export const AboutWrapper = styled.section`
         li {
           display: flex;
           flex-direction: column;
-          /* border-bottom: 1px solid lightgray; */
           padding-bottom: .5rem;
           &:last-child {
             border: none;
@@ -99,4 +98,133 @@ export const AboutWrapper = styled.section`
       }
     }
   }
+
+  @media only screen and (max-width: 320px) {}
+  .about-img {
+      img {}
+    }
+    .about-info {
+      .about-info-left {
+        span {
+          &.title {}
+          &.subtitle {}
+        }
+        button {
+          &:hover {}
+          &:hover::before {}
+        }
+      }
+      .about-info-right {      
+        ul {
+          li {
+            &:last-child {}
+            span {
+              &:first-child {}
+              &:last-child {}
+            }
+          }
+        }
+      }
+    }
+  @media only screen and (max-width: 420px) {
+    .about-img {
+      img {}
+    }
+    .about-info {
+      .about-info-left {
+        span {
+          &.title {}
+          &.subtitle {}
+        }
+        button {
+          &:hover {}
+          &:hover::before {}
+        }
+      }
+      .about-info-right {      
+        ul {
+          li {
+            &:last-child {}
+            span {
+              &:first-child {}
+              &:last-child {}
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .about-img {
+      img {}
+    }
+    .about-info {
+      .about-info-left {
+        span {
+          &.title {}
+          &.subtitle {}
+        }
+        button {
+          &:hover {}
+          &:hover::before {}
+        }
+      }
+      .about-info-right {      
+        ul {
+          li {
+            &:last-child {}
+            span {
+              &:first-child {}
+              &:last-child {}
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    padding: 2rem;
+    .about-img {
+      img {}
+    }
+    .about-info {
+      width: 100%;
+      flex-direction: column;
+      .about-info-left {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        padding: 0;
+        span {
+          &.title {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+          }
+          &.subtitle {}
+        }
+        button {
+          &:hover {}
+          &:hover::before {}
+        }
+      }
+      .about-info-right {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        ul {
+          li {
+            &:last-child {}
+            span {
+              &:first-child {}
+              &:last-child {}
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {}
+  @media only screen and (max-width: 1260px) {}
 `
