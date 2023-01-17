@@ -29,6 +29,9 @@ export default function Home() {
             <a target="_blank" href="https://www.instagram.com/zamurbv/" rel="noopener noreferrer">
               <Image src="/social/_instagram.svg" width={32} height={32} />
             </a>
+            <a target="_blank" href="https://medium.com/@vedovatto/" rel="noopener noreferrer">
+              <Image src="/social/_medium.svg" width={32} height={32} />
+            </a>
           </div>
         </div>
       </HomeWrapper>

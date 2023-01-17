@@ -3,8 +3,8 @@ import FooterWrapper from './../styles/Footer'
 const Footer = () => {
   return (
     <FooterWrapper>
-      <span>&copy; 2021</span>
-      <span>Created by Zamur</span>
+      <span>&copy; 2023</span>
+      <span>Zamur</span>
     </FooterWrapper>
   )
 }

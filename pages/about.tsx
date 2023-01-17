@@ -19,29 +19,32 @@ const About = () => {
         <div className="about-info">
           <div className="about-info-left">
             <span className="title">Zamur & UI Developer</span>
+
             <span className="subtitle">
-              Hello. I'm Zamur B. Vedovatto, currently working as UI Developer on Symplicity Brazil.
+              Front-end Developer with 6+ years of experience in developing and implementing user-centric web solutions.
             </span>
             <span className="subtitle">
-              4+ years of experience with web development and improvement in Javascript and its component-based frameworks.
+              Proven experience in delivering high-quality web projects using Agile practices in working remotely for more than 4 years.
             </span>
             <span className="subtitle">
-              BSc in Information Systems at PUC Minas.
+              Skilled in project management, with experience leading small teams and ensuring timely delivery of projects.
             </span>
             <span className="subtitle">
-              Front end experience in React.js, React Native, Next.js, Angular, Aurelia and SASS.
+              Detail-oriented and able to learn and adapt quickly to new technologies.
             </span>
             <span className="subtitle">
-              Back end experience in Node.js, Django, Mongodb and GraphQL.
+              Holds a BSc in Information Systems from PUC Minas and currently working as a UI Developer at Symplicity, where I have been able to apply my skills and knowledge to deliver successful projects for clients.
             </span>
-            {/* <button onClick={() => setShowModal(true)} type="button">skills technologies tools</button> */}
+            <span className="subtitle">
+              Strong expertise in React.js, Next.js, Angular, Aurelia, and SASS, as well as experience with Node.js, Django, MongoDB, and GraphQL for back-end development.
+            </span>
           </div>
           <div className="about-info-right">
             <ul>
-              <li>
+              {/* <li>
                 <span>Birthday</span>
                 <span>08.08.1986</span>
-              </li>
+              </li> */}
               <li>
                 <span>Location</span>
                 <span>Belo Horizonte MG - Brazil</span>
@@ -52,7 +55,7 @@ const About = () => {
               </li>
               <li>
                 <span>Study</span>
-                <span>Information Systems on PUC Minas</span>
+                <span>BSc Information Systems on PUC Minas</span>
               </li>
             </ul>
           </div>
