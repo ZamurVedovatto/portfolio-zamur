@@ -26,7 +26,12 @@ const Sidebar: React.SFC<SidebarProps> = () => {
         </li>
         <li>
           <Link href="/projects">
-            <a>Portfolio</a>
+            <a>Projects</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/resume">
+            <a>Resume</a>
           </Link>
         </li>
         {/* <li>
