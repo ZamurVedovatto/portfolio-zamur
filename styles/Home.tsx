@@ -61,12 +61,20 @@ export const HomeWrapper = styled.section`
       width: 100%;
       display: flex;
       justify-content: center;
-      img {
-        cursor: pointer;
-        padding: 0 1.25rem 0 .5rem !important;
-        transition: .35s ease-in-out;
-        &:hover {
-          transform: scale(.85);
+      a {
+        img {
+          width: 3.2rem;
+          height: auto;
+          cursor: pointer;
+          padding: 0 1.25rem 0 .5rem !important;
+          opacity: .5;
+          color: #020202;
+          transition: transform .2s ease-in-out, opacity .5s ease-in-out, color .5s ease-in-out;
+          &:hover {
+            transform: translateY(.2rem);
+            opacity: 1;
+            color: #BD671B;
+          }
         }
       }
     }

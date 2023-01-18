@@ -13,9 +13,6 @@ const About = () => {
         <meta name="keywords" content="about"></meta>
       </Head>
       <AboutWrapper>
-        {/* <div className="about-img">
-          <img src="/about.jpg" />
-        </div> */}
         <div className="about-info">
           <div className="about-info-left">
             <span className="title">Zamur & UI Developer</span>

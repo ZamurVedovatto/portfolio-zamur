@@ -14,29 +14,29 @@ const Sidebar: React.SFC<SidebarProps> = () => {
     <SidebarWrapper>
       <div className="logo-area">
         <Link href="/">
-          <Image width={60} height={60} src="/logo.png" />
+          <Image width={60} height={60} src="/logo.png" alt="Alt" />
         </Link>
       </div>
       <ul>
         <li>
         {/* <li className="active"> */}
           <Link href="/about">
-            <a>About & Skills</a>
+            About & Skills
           </Link>
         </li>
         <li>
           <Link href="/projects">
-            <a>Projects</a>
+            Projects
           </Link>
         </li>
         <li>
           <Link href="/resume">
-            <a>Resume</a>
+            Resume
           </Link>
         </li>
         {/* <li>
           <Link href="/contact">
-            <a>Contact</a>
+            Contact
           </Link>
         </li> */}
       </ul>
