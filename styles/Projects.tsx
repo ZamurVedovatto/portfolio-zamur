@@ -1,6 +1,18 @@
 import styled from 'styled-components'
 
 export const ProjectsWrapper = styled.section`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100%;
+span {
+  &.im-sorry {
+    color: #DD8E51;
+    font-size: 1.2rem;
+  }
+}
+padding: 2rem 1rem;
   .cards-wrapper {
     display: flex;
     flex-wrap: wrap;

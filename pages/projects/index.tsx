@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next'
 import { Octokit } from '@octokit/rest'
 import { ProjectsWrapper } from 'styles/Projects'
 import Modal from 'components/ModalComp'
-
+import ImageCustom from 'components/ImageCustom'
 
 // https://www.youtube.com/watch?v=WgJbfMxUl8A
 
@@ -40,6 +40,8 @@ const Users = ({ repos }) => {
         <meta name="keywords" content="projects"></meta>
       </Head>
       <ProjectsWrapper>
+        <ImageCustom path="/sad.png" />
+        <span className="im-sorry">yeah, I have to improve it</span>
         <div className="cards-wrapper">
           {repos?.map(repo => (
             <a className="single">

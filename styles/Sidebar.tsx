@@ -11,6 +11,7 @@ export const SidebarWrapper = styled.div`
   max-height: 100vh;
   position: sticky;
   top: 0;
+  border-right: 2px solid #e2e6e8;
   .logo-area {
     cursor: pointer;
     transition: .25s ease-in-out;
