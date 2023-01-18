@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
@@ -8,8 +9,8 @@ import Footer from './Footer';
 export interface SidebarProps {
   
 }
-
-const Sidebar: React.SFC<SidebarProps> = () => {
+const Sidebar: FC<SidebarProps> = () => {
+// const Sidebar: React.SFC<SidebarProps> = () => {
   return (
     <SidebarWrapper>
       <div className="logo-area">

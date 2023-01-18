@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import ModalWrapper from 'styles/ModalAbout';
 
 export interface Props {
@@ -6,7 +7,7 @@ export interface Props {
   children: any,
 }
 
-const ModalAbout: React.SFC<Props> = ({ handleClose, show, children }) => {
+const ModalAbout: FC<Props> = ({ handleClose, show, children }) => {
 
   return (
     <>

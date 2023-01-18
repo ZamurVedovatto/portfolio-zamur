@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Link } from 'next/link'
 
 import { HomeWrapper } from 'styles/Home'
 
@@ -19,8 +18,8 @@ export default function Home() {
           <h2>Zamur Vedovatto</h2>
           <span>I'm a UI Developer based in Belo Horizonte (Brazil) who thinks that every day is a new opportunity to acquire and improve my skills. So watch out world, because I'm coming for that top spot in the front end game...or at least trying not to fall too far behind.</span>
           <div className="social-media">
-            <a target="_blank" href="https://www.linkedin.com/in/zamur/">
-              <Image src="/social/_linkedin.svg" width={32} height={32} rel="noopener noreferrer" />
+            <a target="_blank" href="https://www.linkedin.com/in/zamur/" rel="noopener noreferrer">
+              <Image src="/social/_linkedin.svg" width={32} height={32} alt="alt" />
             </a>
             <a target="_blank" href="https://github.com/ZamurVedovatto" rel="noopener noreferrer">
               <Image src="/social/_github.svg" width={32} height={32} alt="alt" />
