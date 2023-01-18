@@ -15,7 +15,7 @@ const Sidebar: FC<SidebarProps> = () => {
     <SidebarWrapper>
       <div className="logo-area">
         <Link href="/">
-          <Image width={42} height={42} src="/logo.png" alt="Alt" />
+          <Image width={48} height={48} src="/logo.png" alt="Alt" />
         </Link>
       </div>
       <ul>
