@@ -27,9 +27,6 @@ export default function Home() {
             <a target="_blank" href="https://codepen.io/zvedovatto" rel="noopener noreferrer">
               <Image src="/social/_codepen.svg" width={32} height={32} alt="alt" />
             </a>
-            <a target="_blank" href="https://www.instagram.com/zamurbv/" rel="noopener noreferrer">
-              <Image src="/social/_instagram.svg" width={32} height={32} alt="alt" />
-            </a>
             <a target="_blank" href="https://medium.com/@vedovatto/" rel="noopener noreferrer">
               <Image src="/social/_medium.svg" width={32} height={32} alt="alt" />
             </a>
