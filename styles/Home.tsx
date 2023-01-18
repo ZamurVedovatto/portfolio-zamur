@@ -13,8 +13,9 @@ export const HomeWrapper = styled.section`
     min-width: 300px;
     min-height: 300px;
     position: relative;
-    border-radius: 100%;
+    border-radius: 50%;
     .image {
+      opacity: .6;
       border-radius: 100%;
       background: url('/profile.jpeg');
       position: absolute;
@@ -30,9 +31,9 @@ export const HomeWrapper = styled.section`
       -webkit-box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
       -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
       box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
-      transition: 2s ease-in-out;
+      transition: .5s ease-in;
       &:hover {
-        transform: scale(1.25);
+        transform: scale(1.1);
       }
     }
   }

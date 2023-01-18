@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { AboutWrapper } from 'styles/About'
 import Modal from 'components/ModalComp'
+import ImageCustom from 'components/ImageCustom'
 
 const About = () => {
   const [showModal, setShowModal] = useState(false)
@@ -13,6 +14,7 @@ const About = () => {
         <meta name="keywords" content="about"></meta>
       </Head>
       <AboutWrapper>
+        <ImageCustom path="/sad_man.png" top="60" left="55" />
         <div className="about-info">
           <div className="about-info-left">
             <span className="title">Zamur & UI Developer</span>

@@ -4,8 +4,8 @@ import ImageWrapper from './../styles/ImageCustom'
 
 const ImageCustom = ({ path, top, left }) => {
   const [config, setConfig] = useState({
-    top: 20,
-    left: 15,
+    top: top || 20,
+    left: left || 15,
     rotate: 45,
     width: 180,
     height: 180,
@@ -15,9 +15,9 @@ const ImageCustom = ({ path, top, left }) => {
 
   useEffect(() => {
     setConfig({
-      top: randNum(100),
+      top: randNum(90),
       left: randNum(100),
-      rotate: randNum(100),
+      rotate: randNum(45),
       width: randNum(420),
       height: randNum(420),
     })
