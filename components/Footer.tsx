@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <span>&copy; 2023</span>
-      <span>Zamur</span>
     </FooterWrapper>
   )
 }
