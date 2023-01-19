@@ -41,7 +41,7 @@ const Users = ({ repos }) => {
       </Head>
       <ProjectsWrapper>
         <ImageCustom path="/sad.png" top="40" left="35" />
-        <span className="im-sorry">yeah, I have to improve it</span>
+        <span className="im-sorry">yeah, I really should improve it</span>
         <div className="cards-wrapper">
           {repos?.map(repo => (
             <a className="single">

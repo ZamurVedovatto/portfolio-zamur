@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="info">
           <h2>Zamur Vedovatto</h2>
-          <span>I'm a UI Developer based in Belo Horizonte (Brazil) who thinks that every day is a new opportunity to acquire and improve my skills. So watch out world, because I'm coming for that top spot in the front end game...or at least trying not to fall too far behind.</span>
+          <span>UI Developer based in Belo Horizonte (Brazil) who thinks that every day is a new opportunity to acquire and improve my skills. So watch out world, because I'm coming for that top spot in the front end game...or at least trying not to fall too far behind.</span>
           <div className="social-media">
             <a target="_blank" href="https://www.linkedin.com/in/zamur/" rel="noopener noreferrer">
               <Image src="/social/_linkedin.svg" width={32} height={32} alt="alt" />
